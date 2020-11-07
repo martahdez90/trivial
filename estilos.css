@@ -1,0 +1,120 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Paytone One', sans-serif;
+    /*overflow: hidden;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.contenedor {
+    text-align: center;
+    padding:40px;
+    display: inline-block; 
+    left: 0;
+    top: 0;
+    width: 70%; 
+    min-width: 100vw;
+}
+
+#perder, #ganar{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% desde la parte superior y el centro */
+    padding: 20px;
+    border: 1px solid purple;
+    border-radius: 0.5rem;
+    width: 80%; /* Puede ser más o menos, dependiendo del tamaño de la pantalla */
+    display: none;
+}
+
+.caja {
+    background-color: rgb(26, 138, 167);
+    color: black;
+    width: 60%;
+    display: inline-block;
+    border-radius: 30px;
+}
+
+.grande{
+    background-color: rgb(156, 151, 172);
+    font-style: normal; 
+    overflow: auto; /* Habilita el scroll si es necesario */
+}
+.pequeño{
+    background-image: url("./images/questions.jpg");
+    margin: 10px 0px;
+}
+
+.error {
+    color: rgb(214, 86, 118);
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.acierto {
+    color: rgb(7, 179, 36);
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+h3, #resultado  {
+    font-size: 25px;
+    font-weight: 400px;
+    margin: 2px;
+    color: rgb(5, 1, 5);
+}
+
+
+.categorias {
+    background-color: #cccc;
+}
+
+.categorias h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+input[type=text] {
+    width: 60%;
+     padding: 8px 16px;
+     margin: 4px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+   }
+   
+   /* Personalizar el input radio */
+   #radios {
+       display: flex;
+       justify-content: center;
+   }
+   
+   #radios label {
+       font-weight: 300;
+   }
+   .radio {
+       padding: 8px;
+       margin: 0;
+   }
+
+   input:checked {
+    border: 6px solid black;
+  }
+
+  button {
+      border-radius: 0.5rem;
+      background-color: rgb(26, 138, 167);
+      color: white;
+      padding: 5px;
+  }
+
+  #submit {
+      background-color: coral;
+  }
+
+
+
